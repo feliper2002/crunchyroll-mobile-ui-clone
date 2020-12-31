@@ -1,3 +1,4 @@
+import 'package:crunchyroll_mobile_ui_clone/pages/widgets/actionsList.dart';
 import 'package:crunchyroll_mobile_ui_clone/pages/widgets/bottomNavBar.dart';
 import 'package:crunchyroll_mobile_ui_clone/pages/widgets/cardsSharks.dart';
 import 'package:crunchyroll_mobile_ui_clone/pages/widgets/historyList.dart';
@@ -14,6 +15,7 @@ class CrunchyrollMain extends StatefulWidget {
 class _CrunchyrollMainState extends State<CrunchyrollMain> {
   @override
   Widget build(BuildContext context) {
+    Size screenSize = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -22,31 +24,20 @@ class _CrunchyrollMainState extends State<CrunchyrollMain> {
             'crunchyroll',
             style: crunchyrollNameAppBar,
           ),
-          actions: [
-            IconButton(
-              color: Colors.white,
-              icon: Icon(Icons.cast),
-              onPressed: () {},
-            ),
-            IconButton(
-              color: Colors.white,
-              icon: Icon(Icons.search),
-              onPressed: () {},
-            ),
-          ],
+          actions: actions,
         ),
         bottomNavigationBar: BottomNavBar(),
-        body: SingleChildScrollView(
-          child: Expanded(
-            child: Container(
-              padding: EdgeInsets.only(top: 5, left: 14),
-              child: Column(
-                children: [
-                  PicksList(),
-                  HistoryList(),
-                  CardsSharksList(),
-                ],
-              ),
+        body: Container(
+          height: screenSize.height,
+          width: screenSize.width,
+          child: SingleChildScrollView(
+            padding: EdgeInsets.only(top: 5, left: 8, bottom: 8),
+            child: Column(
+              children: [
+                PicksList(),
+                HistoryList(),
+                CardsSharksList(),
+              ],
             ),
           ),
         ),

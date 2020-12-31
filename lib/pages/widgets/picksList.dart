@@ -25,11 +25,34 @@ class _PicksListState extends State<PicksList> {
             scrollDirection: Axis.horizontal,
             child: Row(
               children: [
-                AnimeSimpleCard(title: '', type: ''),
-                AnimeSimpleCard(title: '', type: ''),
-                AnimeSimpleCard(title: '', type: ''),
-                AnimeSimpleCard(title: '', type: ''),
-                AnimeSimpleCard(title: '', type: ''),
+                AnimeSimpleCard(
+                    title: '',
+                    type: '',
+                    animeImage: AssetImage('lib/assets/images/lovelive.jpg')),
+                AnimeSimpleCard(
+                  title: '',
+                  type: '',
+                  isOnList: false,
+                  animeImage: AssetImage('lib/assets/images/blackclover.jpg'),
+                ),
+                AnimeSimpleCard(
+                  title: '',
+                  type: '',
+                  isOnList: false,
+                  animeImage: AssetImage('lib/assets/images/boruto.jpg'),
+                ),
+                AnimeSimpleCard(
+                  title: '',
+                  type: '',
+                  isOnList: true,
+                  animeImage: AssetImage('lib/assets/images/bleach.jpg'),
+                ),
+                AnimeSimpleCard(
+                  title: '',
+                  type: '',
+                  isOnList: true,
+                  animeImage: AssetImage('lib/assets/images/haikyu.jpg'),
+                ),
               ],
             ),
           ),

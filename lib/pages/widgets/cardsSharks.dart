@@ -25,11 +25,35 @@ class _CardsSharksListState extends State<CardsSharksList> {
             scrollDirection: Axis.horizontal,
             child: Row(
               children: [
-                AnimeSimpleCard(title: '', type: ''),
-                AnimeSimpleCard(title: '', type: ''),
-                AnimeSimpleCard(title: '', type: ''),
-                AnimeSimpleCard(title: '', type: ''),
-                AnimeSimpleCard(title: '', type: ''),
+                AnimeSimpleCard(
+                    title: '',
+                    type: '',
+                    animeImage:
+                        AssetImage('lib/assets/images/lovelivesunshine.jpg')),
+                AnimeSimpleCard(
+                  title: '',
+                  type: '',
+                  isOnList: false,
+                  animeImage: AssetImage('lib/assets/images/onepiece.jpg'),
+                ),
+                AnimeSimpleCard(
+                  title: '',
+                  type: '',
+                  isOnList: false,
+                  animeImage: AssetImage('lib/assets/images/iwakakeru.jpg'),
+                ),
+                AnimeSimpleCard(
+                  title: '',
+                  type: '',
+                  isOnList: true,
+                  animeImage: AssetImage('lib/assets/images/sao.jpg'),
+                ),
+                AnimeSimpleCard(
+                  title: '',
+                  type: '',
+                  isOnList: true,
+                  animeImage: AssetImage('lib/assets/images/youjitsu.jpg'),
+                ),
               ],
             ),
           ),
