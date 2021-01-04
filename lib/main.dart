@@ -1,7 +1,7 @@
-import 'package:crunchyroll_mobile_ui_clone/styles/themeScheme.dart';
+import 'pages/crunchyrollMain.dart';
+import 'styles/themeScheme.dart';
 import 'package:flutter/material.dart';
 
-import 'pages/crunchyrollMain.dart';
 
 void main() => runApp(CrunchyrollUIClone());
 
